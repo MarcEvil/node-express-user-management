@@ -78,14 +78,157 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Boton de regreso */
-a[href="/"] {
-    display: inline-block;
-    margin-top: 20px;
-    color: #3498db;
+
+
+
+
+
+
+
+
+/* Botón Volver Personalizado */
+.btn-custom-volver {
+    background: #6c757d00;
+    /* Gris profesional */
+    color: hsl(212, 90%, 60%);
+    padding: 10px 20px;
+    border-radius: 8px;
+    /* Menos redondeado que el de registro para diferenciar */
+    border: 1px solid #5a6268;
+    font-weight: 500;
+    transition: all 0.3s ease;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
 }
 
-a[href="/"]:hover {
-    text-decoration: underline;
+/* Efecto al pasar el mouse */
+.btn-custom-volver:hover {
+    background: #ffffff00;
+    color: #000000;
+    transform: translateX(-5px);
+    /* Se mueve levemente a la izquierda (efecto retroceso) */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Icono dentro del botón volver */
+.btn-custom-volver i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Animación del icono al hacer hover */
+.btn-custom-volver:hover i {
+    transform: scale(1.2);
+}
+
+/*----------------------------------------------*/
+
+/* Botón Registrar Personalizado */
+.btn-custom-registro {
+    background: #6c757d00;
+    /* Gris profesional */
+    color: hsl(212, 90%, 60%);
+    padding: 10px 20px;
+    border-radius: 8px;
+    /* Menos redondeado que el de registro para diferenciar */
+    border: 1px solid #5a6268;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Efecto al pasar el mouse */
+.btn-custom-registro:hover {
+    background: #ffffff00;
+    color: #000000;
+    transform: translateX(-5px);
+    /* Se mueve levemente a la izquierda (efecto retroceso) */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Icono dentro del botón volver */
+.btn-custom-registro i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Animación del icono al hacer hover */
+.btn-custom-registro:hover i {
+    transform: scale(1.2);
+}
+
+/* Estilo boton eliminar usuario */
+.btn-danger {
+    background-color: #0c000000;
+    color: black;
+    border: 1px solid #5a6268;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.btn-danger:hover {
+    background-color: #0f0e0e;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(34, 34, 34, 0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+
+
+/* Ajustes para el Formulario Elegante */
+.card.rounded-4 {
+    border-radius: 1.5rem !important;
+}
+
+.rounded-top-4 {
+    border-top-left-radius: 1.5rem !important;
+    border-top-right-radius: 1.5rem !important;
+}
+
+/* Estilo de los Inputs al enfocarse */
+.form-control:focus {
+    background-color: #fff !important;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.input-group-text {
+    color: #6c757d;
+}
+
+/* Efecto sutil en la Card */
+.card {
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/*btn-link cancelar y volver*/
+
+.btn-link {
+    background-color: #0c000000;
+    color: black;
+    border: 1px solid #5a6268;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    margin-left: 550px;
+    border-radius: 8px;
+}
+
+.btn-link:hover {
+    background-color: #0f0e0e;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(34, 34, 34, 0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
 }

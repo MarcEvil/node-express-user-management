@@ -1,2 +1,12 @@
-node_modules
+# Dependencias
+node_modules/
+
+# Variables de entorno (Seguridad)
 .env
+
+# Logs y archivos temporales
+logs/*.txt
+npm-debug.log*
+
+# Datos locales (opcional, si ya no usas el JSON)
+data/*.json

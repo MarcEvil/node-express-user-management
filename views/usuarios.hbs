@@ -1,16 +1,53 @@
 <h1>{{titulo}}</h1>
 
-<div class="usuarios-container">
-    {{#each usuarios}}
-    <div class="usuario-card">
-        <p><strong>ID:</strong> {{this.id}}</p>
-        <p><strong>Nombre:</strong> {{this.nombre}}</p>
-        <p><strong>Email:</strong> {{this.email}}</p>
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        {{!-- Boton para agregar usuario nuevo --}}
+        <a href="/registro" class="btn btn-custom-registro shadow">
+            <i class="bi bi-person-plus-fill"></i> Registrar Nuevo Usuario
+        </a>
     </div>
-    <hr>
-    {{else}}
-    <p>No hay usuarios registrados actualmente.</p>
-    {{/each}}
+
+    <div class="row">
+        {{#each usuarios}}
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.nombre}}</h5>
+                    <p class="card-text text-muted">{{this.email}}</p>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-12 text-center mt-5">
+            <p class="text-muted">No hay usuarios en la base de datos.</p>
+            <a href="/registro" class="btn btn-outline-primary">Comenzar primer registro</a>
+        </div>
+        {{/each}}
+    </div>
 </div>
 
-<a href="/">Volver al Inicio</a>
+{{!-- Boton para eliminar usuario --}}
+
+{{#each usuarios}}
+<div class="usuario-card d-flex justify-content-between align-items-center p-3 mb-2 border rounded shadow-sm">
+    <div>
+        <p class="mb-0"><strong>ID:</strong> {{this.id}} - <strong>Nombre:</strong> {{this.nombre}}</p>
+        <p class="mb-0 text-muted"><strong>Email:</strong> {{this.email}}</p>
+    </div>
+
+    <form action="/usuarios/eliminar/{{this.id}}" method="POST"
+        onsubmit="return confirm('¿Estás seguro de eliminar a este usuario?')">
+        <button type="submit" class="btn btn-danger btn-sm">
+            <i class="bi bi-trash"></i> Eliminar
+        </button>
+    </form>
+</div>
+{{/each}}
+
+{{!-- Boton para volver --}}
+<div class="mt-4">
+    <a href="/" class="btn btn-custom-volver shadow-sm">
+        <i class="bi bi-arrow-left-circle"></i> Volver al Inicio
+    </a>
+</div>
