@@ -258,3 +258,101 @@
 [29-03-2026, 12:09:25 a. m.] Metodo: GET - Ruta: /registro
 [29-03-2026, 12:10:04 a. m.] Metodo: POST - Ruta: /registro
 [29-03-2026, 12:10:04 a. m.] Metodo: GET - Ruta: /usuarios
+[06-04-2026, 3:41:07 p. m.] Metodo: GET - Ruta: /
+[06-04-2026, 3:41:14 p. m.] Metodo: GET - Ruta: /usuarios
+[06-04-2026, 9:23:47 p. m.] Metodo: GET - Ruta: /
+[06-04-2026, 9:23:52 p. m.] Metodo: GET - Ruta: /usuarios
+[06-04-2026, 9:23:56 p. m.] Metodo: GET - Ruta: /
+[06-04-2026, 9:32:58 p. m.] Metodo: GET - Ruta: /
+[06-04-2026, 9:33:05 p. m.] Metodo: GET - Ruta: /usuarios
+[06-04-2026, 9:33:09 p. m.] Metodo: GET - Ruta: /registro
+[06-04-2026, 9:33:17 p. m.] Metodo: GET - Ruta: /usuarios
+[06-04-2026, 9:49:30 p. m.] GET - /
+[06-04-2026, 9:49:35 p. m.] GET - /usuarios
+[06-04-2026, 9:49:37 p. m.] GET - /registro
+[06-04-2026, 9:52:29 p. m.] GET - /registro
+[06-04-2026, 9:52:44 p. m.] GET - /login
+[06-04-2026, 9:52:49 p. m.] GET - /
+[06-04-2026, 9:54:23 p. m.] GET - /login
+[06-04-2026, 9:54:33 p. m.] POST - /api/login
+[06-04-2026, 9:54:34 p. m.] GET - /registro
+[06-04-2026, 9:54:45 p. m.] POST - /api/subir
+[06-04-2026, 9:55:52 p. m.] GET - /
+[06-04-2026, 9:56:01 p. m.] GET - /login
+[06-04-2026, 9:56:07 p. m.] POST - /api/login
+[06-04-2026, 9:56:08 p. m.] GET - /registro
+[06-04-2026, 9:56:22 p. m.] POST - /api/subir
+[06-04-2026, 10:03:21 p. m.] Metodo: GET - Ruta: /
+[06-04-2026, 10:03:27 p. m.] Metodo: GET - Ruta: /
+[06-04-2026, 10:03:28 p. m.] Metodo: GET - Ruta: /usuarios
+[06-04-2026, 10:03:31 p. m.] Metodo: GET - Ruta: /login
+[06-04-2026, 10:03:34 p. m.] Metodo: POST - Ruta: /api/login
+[06-04-2026, 10:03:35 p. m.] Metodo: GET - Ruta: /registro
+[06-04-2026, 10:03:46 p. m.] Metodo: POST - Ruta: /api/subir
+[06-04-2026, 10:04:28 p. m.] Metodo: GET - Ruta: /
+[06-04-2026, 10:04:39 p. m.] Metodo: GET - Ruta: /usuarios
+[06-04-2026, 10:04:46 p. m.] Metodo: GET - Ruta: /
+[06-04-2026, 10:04:49 p. m.] Metodo: GET - Ruta: /registro
+[06-04-2026, 10:05:00 p. m.] Metodo: POST - Ruta: /api/subir
+[06-04-2026, 10:08:34 p. m.] Metodo: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:09:46 p. m.] Metodo: GET - Ruta: /
+[06-04-2026, 10:09:51 p. m.] Metodo: GET - Ruta: /login
+[06-04-2026, 10:09:57 p. m.] Metodo: POST - Ruta: /api/login
+[06-04-2026, 10:09:58 p. m.] Metodo: GET - Ruta: /registro
+[06-04-2026, 10:10:01 p. m.] Metodo: GET - Ruta: /registro
+[06-04-2026, 10:10:10 p. m.] Metodo: POST - Ruta: /api/subir
+[06-04-2026, 10:10:22 p. m.] Metodo: GET - Ruta: /registro
+[06-04-2026, 10:10:36 p. m.] Metodo: POST - Ruta: /api/subir
+[06-04-2026, 10:10:39 p. m.] Metodo: GET - Ruta: /login
+[06-04-2026, 10:10:56 p. m.] Metodo: POST - Ruta: /api/login
+[06-04-2026, 10:10:57 p. m.] Metodo: GET - Ruta: /registro
+[06-04-2026, 10:11:11 p. m.] Metodo: POST - Ruta: /api/subir
+[06-04-2026, 10:11:15 p. m.] Metodo: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:13:07 p. m.] GET en /
+[06-04-2026, 10:13:11 p. m.] GET en /login
+[06-04-2026, 10:13:15 p. m.] POST en /api/login
+[06-04-2026, 10:15:12 p. m.] GET en /login
+[06-04-2026, 10:15:15 p. m.] POST en /api/login
+[06-04-2026, 10:16:03 p. m.] GET en /
+[06-04-2026, 10:16:09 p. m.] GET en /login
+[06-04-2026, 10:16:12 p. m.] POST en /api/login
+[06-04-2026, 10:21:16 p. m.] GET en /
+[06-04-2026, 10:21:25 p. m.] GET en /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:21:34 p. m.] GET en /login
+[06-04-2026, 10:21:34 p. m.] GET en /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:21:40 p. m.] POST en /api/login
+[06-04-2026, 10:21:41 p. m.] GET en /registro
+[06-04-2026, 10:21:41 p. m.] GET en /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:21:54 p. m.] POST en /api/subir
+[06-04-2026, 10:22:40 p. m.] GET en /usuarios
+[06-04-2026, 10:22:40 p. m.] GET en /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:23:00 p. m.] GET en /
+[06-04-2026, 10:23:00 p. m.] GET en /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:23:03 p. m.] GET en /login
+[06-04-2026, 10:23:03 p. m.] GET en /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:23:27 p. m.] GET en /
+[06-04-2026, 10:23:34 p. m.] GET en /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:23:42 p. m.] GET en /login
+[06-04-2026, 10:23:47 p. m.] POST en /api/login
+[06-04-2026, 10:23:48 p. m.] GET en /registro
+[06-04-2026, 10:23:52 p. m.] GET en /registro
+[06-04-2026, 10:24:02 p. m.] POST en /api/subir
+[06-04-2026, 10:34:58 p. m.] GET en /
+[06-04-2026, 10:35:04 p. m.] GET en /login
+[06-04-2026, 10:35:10 p. m.] GET en /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:35:20 p. m.] GET en /login
+[06-04-2026, 10:35:20 p. m.] GET en /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:36:37 p. m.] POST en /api/login
+[06-04-2026, 10:36:38 p. m.] GET en /registro
+[06-04-2026, 10:36:38 p. m.] GET en /.well-known/appspecific/com.chrome.devtools.json
+[06-04-2026, 10:36:53 p. m.] POST en /api/subir
+[06-04-2026, 11:37:46 p. m.] GET en /registro
+[06-04-2026, 11:37:46 p. m.] GET en /favicon.ico
+[06-04-2026, 11:38:12 p. m.] GET en /login
+[06-04-2026, 11:38:16 p. m.] POST en /api/login
+[06-04-2026, 11:38:17 p. m.] GET en /registro
+[06-04-2026, 11:38:44 p. m.] POST en /api/subir
+[06-04-2026, 11:38:57 p. m.] GET en /
+[06-04-2026, 11:38:59 p. m.] GET en /usuarios
+[06-04-2026, 11:39:00 p. m.] GET en /login
+[06-04-2026, 11:39:01 p. m.] GET en /registro

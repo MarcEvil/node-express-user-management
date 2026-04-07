@@ -1,184 +1,78 @@
-# 🚀 Sistema de Gestión Tech Solutions - Módulo 6
+# Tech Solutions - Gestión Administrativa (Módulo 8)
 
-Este proyecto representa la culminación de la **Parte 1 del Módulo 6**. Se ha construido un servidor robusto con **Node.js** y **Express**, aplicando una arquitectura limpia, modular y preparada para el escalamiento.
+Este proyecto es una plataforma de gestión de usuarios desarrollada con **Node.js**, **Express** y **Sequelize**, actualizada para cumplir con los requisitos del Módulo 8: Autenticación mediante **JWT (JSON Web Tokens)** y persistencia de archivos con **Multer**.
 
----
+## 🚀 Funcionalidades Principales
 
-## 📂 Arquitectura del Proyecto
+* **Autenticación Segura**: Implementación de login para la generación de tokens JWT.
+* **Seguridad de Rutas**: Middlewares personalizados para proteger rutas sensibles.
+* **Carga de Archivos**: Sistema de subida de imágenes de perfil para usuarios.
+* **Persistencia**: Base de datos PostgreSQL integrada con Sequelize.
+* **Motor de Vistas**: Renderizado dinámico mediante Handlebars (HBS).
+* **Auditoría**: Sistema de logs que registra cada petición al servidor.
 
-Para este desarrollo, se aplicó una separación de responsabilidades (SoC), organizando el código en directorios especializados:
+## 🛠️ Tecnologías Utilizadas
 
-* **`app.js`**: 🧠 Punto de entrada principal. Configura el motor Handlebars y los middlewares globales.
-* **`routes/`**: 📍 Contiene la lógica de los endpoints. Se utilizó `Express Router` para desacoplar las rutas del servidor principal.
-* **`data/`**: 📦 Persistencia de datos en archivos planos (`usuarios.json`).
-* **`logs/`**: 📝 Registro histórico de actividad (`log.txt`) generado por middleware de auditoría.
-* **`public/`**: 🎨 Recursos estáticos (CSS, JS, imágenes) servidos de forma directa.
-* **`views/`**: 🎭 Plantillas dinámicas:
-    * `layouts/`: Estructura base maestra (`main.hbs`).
-    * `partials/`: Componentes reutilizables (**Header** y **Footer**).
+* Backend: Node.js, Express.
+* Base de Datos: PostgreSQL, Sequelize.
+* Seguridad: JSON Web Token (JWT).
+* Manejo de Archivos: Multer.
+* Vistas: Express-Handlebars.
+* Estilos: Bootstrap 5.
 
----
+## 📁 Estructura del Proyecto
 
-## 🛠️ Stack Tecnológico
-
-* **Runtime**: Node.js (v18+) 🟢
-* **Framework**: Express.js 🚂
-* **Motor de Plantillas**: Handlebars (HBS) 🎭
-* **Gestión de Variables**: Dotenv 🔐
-* **Estándar de Código**: ES Modules (`import/export`) 📦
-* **Persistencia**: Módulo nativo `fs` (File System) 📑
-
----
-
-## ⚙️ Configuración e Instalación
-
-Siga estos pasos para poner en marcha el servidor:
-
-1.  **Instalar dependencias**:
-    ```bash
-    npm install
-    ```
-
-2.  **Configurar entorno**:
-    Cree un archivo `.env` en la raíz con el siguiente contenido:
-    ```env
-    PORT=3000
-    ```
-
-3.  **Ejecutar el servidor**:
-    * **Desarrollo**: `npm run dev` (Recomendado)
-    * **Producción**: `npm start`
-
----
-
-## 📝 Decisiones de Diseño
-
-### 1. Enrutamiento Modularizado
-A diferencia de aplicaciones básicas, las rutas se extrajeron a la carpeta `routes/`. Esto permite que el archivo `app.js` permanezca limpio y se centre únicamente en la configuración del entorno.
-
-### 2. Rutas Absolutas Robustas
-Se implementó `process.cwd()` para la lectura de la base de datos JSON. Esto garantiza que el servidor encuentre los archivos de datos sin importar desde qué directorio se ejecute el proceso de Node. 📍
-
-### 3. Sistema de Auditoría (Middleware)
-Se diseñó un middleware personalizado que intercepta cada solicitud y registra en tiempo real el método HTTP, la URL y la marca de tiempo en `logs/log.txt`. 🕒
-
----
-
-## 🔗 Endpoints del Sistema
-
-| Ruta | Método | Función |
-| :--- | :--- | :--- |
-| `/` | `GET` | Dashboard de inicio con datos dinámicos. |
-| `/usuarios` | `GET` | Renderizado de lista de usuarios desde JSON. |
-| `/status` | `GET` | Estado operacional y tiempo de actividad (Uptime). |
-
----
-
-> **Nota**: Este proyecto ha sido desarrollado como parte del programa de formación **FullStack JavaScript Trainee 2026**. ✅
-> **Nota**: Iconos o caracteres especiales obtenidos utilizando las teclas "windows + ."
->**Nota**: Enlace a carpeta subida a Google Drive https://drive.google.com/drive/folders/11D4T-PUvtwxIYrQYA4jD6Emj-B1dGce2?usp=sharing
->**nota**: Al intentar instalar nodemon y ejecutar run dev causaba conflicto de compativilidad, asique decidí ejecutarlo con "npm start"
-
-
-______________________________________________________________________________________________________________________________________________
-# Segunda parte del trabajo 
-
-🚀 Tech Solutions: Sistema de Gestión de Usuarios (M7)
-Desarrollador: Marcelo Mardones Guzmán
-
-Estado: Entregable Final - Módulo 7 (Persistencia Relacional)
-
-Este proyecto es una aplicación web FullStack diseñada para la administración técnica de usuarios. La arquitectura ha sido migrada de un sistema de archivos planos (JSON) a una base de datos relacional robusta, implementando el patrón MVC y Sequelize ORM.
-
-# 📑 Índice
-Requerimientos Cumplidos
-
-Stack Tecnológico
-
-Estructura del Proyecto
-
-Instalación y Configuración
-
-Endpoints Disponibles
-
-# ✅ Requerimientos Cumplidos
-Persistencia en SQL: Integración completa con PostgreSQL.
-
-Operaciones CRUD: * Create: Registro de usuarios mediante formulario estilizado.
-
-Read: Visualización dinámica de la base de datos en una tabla/grid.
-
-Delete: Eliminación de registros con confirmación de seguridad.
-
-Diseño UI/UX: Interfaz profesional construida con Bootstrap 5 y CSS personalizado (Efectos de elevación y botones CTA).
-
-Arquitectura: Separación clara de responsabilidades (Modelos, Vistas y Controladores).
-
-# 💻 Stack Tecnológico
-Backend: Node.js, Express.js.
-
-Frontend: Handlebars (HBS), Bootstrap 5, Bootstrap Icons.
-
-Base de Datos: PostgreSQL.
-
-ORM: Sequelize (v6+).
-
-Variables de Entorno: Dotenv (para protección de credenciales
-
-# 📁 Estructura del Proyecto
-EntregaM7/
-├── public/               # Estilos CSS y activos estáticos
+M7Git/
+├── logs/                 # Registros de actividad (.txt)
+├── public/               # Archivos estáticos (CSS, JS)
 ├── src/
-│   ├── config/           # Configuración de conexión a PostgreSQL
-│   ├── controllers/      # Lógica de negocio (Sequelize functions)
-│   ├── models/           # Definición del modelo 'Usuario'
-│   ├── routes/           # Definición de rutas Express
-│   └── app.js            # Inicialización del servidor y Middleware
+│   ├── config/           # Conexión a la base de datos (entrega_m7)
+│   ├── controllers/      # Lógica de negocio (registrarUsuario, etc.)
+│   ├── middlewares/      # auth.middleware y multer.middleware
+│   ├── models/           # Modelos de Sequelize
+│   └── routes/           # Definición de rutas (index.js)
+├── uploads/              # Carpeta de destino para imágenes subidas
 ├── views/                # Plantillas Handlebars
-│   ├── partials/         # Componentes reutilizables (Navbar, Header)
-│   ├── layouts/          # main.hbs (Estructura base)
-│   ├── home.hbs          # Panel de bienvenida
-│   ├── usuarios.hbs      # Listado de usuarios registrados
-│   └── registro.hbs      # Formulario de alta de usuarios
-├── .env                  # Configuración de base de datos (Ejemplo incluido)
-└── package.json          # Gestión de scripts y dependencias
+└── app.js                # Punto de entrada del servidor
 
-# 🚀 Instalación y Configuración
-## 1. Preparación de la Base de Datos
-Asegúrese de tener PostgreSQL instalado y cree una base de datos vacía:
+## ⚙️ Instalación y Configuración
 
-CREATE DATABASE tech_solutions_db;
+1. Clonar el repositorio.
+2. Instalar dependencias:
+   npm install
+3. Configurar variables de entorno en el archivo `.env`:
+   PORT=3000
+   DB_NAME=entrega_m7
+   DB_USER=tu_usuario
+   DB_PASS=tu_password
+   DB_HOST=localhost
 
-## 2. Configuración del Entorno
-Cree un archivo .env en la raíz con sus credenciales:
+## 🚦 Instrucciones de Prueba (Flujo de Usuario)
 
-PORT=3000
-DB_NAME=tech_solutions_db
-DB_USER=postgres
-DB_PASS=su_contraseña
-DB_HOST=localhost
+Para evaluar el correcto funcionamiento del Módulo 8, siga estos pasos:
 
-## Ejecución del Proyecto
+1. **Paso 1 - Login**: Acceder a `http://localhost:3000/login`. Al ingresar las credenciales, el sistema generará un Token JWT y lo almacenará en el `localStorage` del navegador.
+2. **Paso 2 - Registro**: Dirigirse a `http://localhost:3000/registro`. El formulario permitirá ingresar el nombre del usuario y seleccionar una imagen.
+3. **Paso 3 - Validación**: Al presionar el botón de registro, el cliente envía el Token en los headers (`Authorization: Bearer <token>`). El servidor valida el token y Multer procesa la imagen, guardándola en la carpeta `/uploads`.
+4. **Paso 4 - Confirmación**: Los datos se almacenan en la base de datos `entrega_m7`.
 
-#   Instalar dependencias
-    npm install
+## 🛡️ Seguridad
 
-#   Iniciar en modo desarrollo (Nodemon)
-    npm run dev
-
-# 🔗 Endpoints Disponibles
-
-Método /Ruta                     /  Descripción
-
-GET    /Home                     / Dashboard principal
-GET    /usuarios,                /Lista todos los usuarios de PostgreSQL
-GET    /registro,                /Muestra el formulario de registro
-POST   /registro,                /Guarda un nuevo usuario en la DB
-POST   /usuarios/eliminar/:id,   /Elimina un usuario por su ID
+El sistema utiliza un middleware de verificación que comprueba la firma del token antes de permitir cualquier operación de escritura o subida de archivos, garantizando que solo usuarios autenticados puedan modificar el sistema.
 
 
-> **Nota**: El sistema sincroniza automáticamente los modelos con la base de datos al iniciar el servidor mediante db.sync().
+---
 
-> **Nota**: El servidor utiliza db.sync({ force: false }) para asegurar que las tablas se creen automáticamente al iniciar la aplicación sin borrar los datos existentes.
+> **Nota:** ### 📝 NOTA TÉCNICA: Resolución del error "Token inválido o expirado"
 
->**nota**: Esta segunda entrega del trabajo (Modulo 7) se logra utilizar nodemon lo que en la version anterior no permitía por compatibilidad.
+En caso de encontrar el error `❌ Error: Token inválido o expirado` durante las pruebas, considere los siguientes puntos de resolución técnica implementados en este proyecto:
+
+1. **Sincronización de Secret Key**: El servidor utiliza una firma digital única (`secret_key_m8`). Si el token fue generado con una llave distinta o previa a la última actualización del servidor, la validación fallará por seguridad.
+2. **Persistencia en Cliente**: El navegador puede mantener almacenado un token antiguo en el `localStorage`. Para solucionar esto, ejecute `localStorage.clear()` en la consola del desarrollador y reinicie el flujo de Login.
+3. **Expiración de Sesión**: Los tokens tienen un tiempo de vida de **1 hora**. Una vez cumplido este tiempo, el middleware de seguridad rechazará cualquier petición a la ruta `/api/subir` hasta que se genere un nuevo acceso.
+
+---
+
+---
+Desarrollado por Marcelo Mardones Guzmán - 2026
+
